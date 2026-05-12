@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)",
+      "WebFetch(domain:www.pexels.com)",
+      "WebFetch(domain:images.pexels.com)",
+      "Bash(gh auth *)",
+      "PowerShell(gh auth status 2>&1)",
+      "PowerShell(winget install --id GitHub.cli --silent --accept-package-agreements --accept-source-agreements 2>&1)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); gh --version 2>&1)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); gh auth status 2>&1)",
+      "PowerShell($env:PATH = [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"Machine\"\\) + \";\" + [System.Environment]::GetEnvironmentVariable\\(\"PATH\",\"User\"\\); Set-Location \"c:\\\\Users\\\\Hudson\\\\BlackDog\\\\saber-lp\"; gh repo create saber-lp --public --description \"Landing page - Escola Saber | Escada-PE | React + Vite + Tailwind CSS\" --source . --remote origin --push 2>&1)"
+    ]
+  }
+}
