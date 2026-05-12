@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  body {
+    @apply bg-white text-gray-800;
+  }
+
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-orange-400;
+  }
+}
+
+@layer components {
+  .btn-orange {
+    @apply bg-[#FF8C42] hover:bg-orange-500 text-white font-bold px-6 py-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-outline-white {
+    @apply border-2 border-white text-white font-bold px-6 py-3 rounded-full transition-all duration-200 hover:bg-white hover:text-gray-800;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold text-gray-800 leading-tight;
+  }
+
+  .chip {
+    @apply px-4 py-2 rounded-full border-2 font-semibold text-sm cursor-pointer transition-all duration-150 select-none;
+  }
+
+  .chip-inactive {
+    @apply border-gray-300 text-gray-600 hover:border-[#FF8C42] hover:text-[#FF8C42];
+  }
+
+  .chip-active {
+    @apply border-[#FF8C42] bg-[#FF8C42] text-white;
+  }
+}
